@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "505350862236",
+    "project_id": "odisha-warrior",
+    "storage_bucket": "odisha-warrior.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505350862236:android:8014477d3b084b12a7c459",
+        "android_client_info": {
+          "package_name": "com.example.odishawarrior"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505350862236-1nd3v1fbloehf1u70trpavipsd09e847.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRmiG7Q21Xe25iiixX8Br5dQFEpQsTGhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505350862236-1nd3v1fbloehf1u70trpavipsd09e847.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

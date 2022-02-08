@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdateUserDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_placeholder" />
+
+    <EditText
+        android:id="@+id/chngAccFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/chngAccPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none|phone"
+        app:layout_constraintEnd_toEndOf="@+id/chngAccFullName"
+        app:layout_constraintStart_toStartOf="@+id/chngAccFullName"
+        app:layout_constraintTop_toBottomOf="@+id/chngAccFullName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Change password:"
+        app:layout_constraintStart_toStartOf="@+id/chngAccPhone"
+        app:layout_constraintTop_toBottomOf="@+id/chngAccPhone" />
+
+    <EditText
+        android:id="@+id/chngAccOldPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Old password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/chngAccFullName"
+        app:layout_constraintStart_toStartOf="@+id/chngAccFullName"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/chngAccNewPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="New password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/chngAccOldPass"
+        app:layout_constraintStart_toStartOf="@+id/chngAccOldPass"
+        app:layout_constraintTop_toBottomOf="@+id/chngAccOldPass" />
+
+    <EditText
+        android:id="@+id/chngAccConfirmPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/chngAccNewPass"
+        app:layout_constraintStart_toStartOf="@+id/chngAccNewPass"
+        app:layout_constraintTop_toBottomOf="@+id/chngAccNewPass" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:text="Update"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chngAccConfirmPass"
+        app:layout_constraintStart_toStartOf="@+id/chngAccConfirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/chngAccConfirmPass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activities.ProductDetailsActivity">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/productImageViewPager"
+                android:layout_width="350dp"
+                android:layout_height="240dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/viewPageTabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/dot_selector"
+                android:background="@null"
+                app:tabIndicatorHeight="0px"
+
+                app:layout_constraintBottom_toBottomOf="@id/productImageViewPager"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                app:layout_constraintRight_toRightOf="parent"
+                app:tabRippleColor="#20000000" />
+
+            <TextView
+                android:id="@+id/productTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Physics Thermodynamics"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productImageViewPager"
+
+                />
+
+            <TextView
+                android:id="@+id/productSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Sub Title"
+                android:textColor="@color/grey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productTitle"
+
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_corner_bacgkround_white"
+                android:backgroundTint="@color/darkGreen"
+                android:padding="4dp"
+                app:layout_constraintStart_toStartOf="@+id/productSubTitle"
+                app:layout_constraintTop_toBottomOf="@+id/productSubTitle">
+
+                <TextView
+                    android:id="@+id/totalAverageRatingTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.9"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/star_icon"
+                    app:tint="@color/white" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/totalRatingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="(287) Ratings"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/sellPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Rs 1999/-"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/normalPriceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Rs 5999/-"
+                app:layout_constraintBottom_toBottomOf="@+id/sellPriceTv"
+                app:layout_constraintStart_toEndOf="@+id/sellPriceTv"
+                app:layout_constraintTop_toTopOf="@+id/sellPriceTv" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/normalPriceTv"
+                app:layout_constraintEnd_toEndOf="@+id/normalPriceTv"
+                app:layout_constraintStart_toStartOf="@+id/normalPriceTv"
+                app:layout_constraintTop_toTopOf="@+id/normalPriceTv" />
+
+            <TextView
+                android:id="@+id/detailsJunk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#10000000"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp"
+                android:text="Details"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sellPriceTv" />
+
+            <TextView
+                android:id="@+id/elaboratedDetailsTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:elevation="3dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaa  ccccccccccccccccccccccccccccccc"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailsJunk" />
+
+            <!-- Ratings Constraint Container layout -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/elaboratedDetailsTv">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Ratings"
+                    android:textColor="@color/black"
+
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Ratings same as that of the above -->
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+                    android:padding="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView1">
+
+                    <TextView
+                        android:id="@+id/totalAverageRatingsBottomTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.9"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/star_icon"
+                        app:tint="@color/black" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <!-- Total Ratings -->
+
+                <TextView
+                    android:id="@+id/totalRatingBottomTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="287 Ratings"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@id/linearLayout1"
+                    app:layout_constraintRight_toRightOf="@id/linearLayout1"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+                <!-- Advanced Ratings Layout -->
+
+                <!-- 5 Star Constraint Layout-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/star5ConstraintLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/totalRatingBottomTv">
+
+                    <!-- Rate Quantity -->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/star5linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="4dp"
+
+                        app:layout_constraintLeft_toLeftOf="@id/star5ConstraintLayout"
+                        app:layout_constraintTop_toTopOf="@id/star5ConstraintLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/black" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar5"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        app:layout_constraintBottom_toBottomOf="@id/star5linearLayout"
+                        app:layout_constraintLeft_toRightOf="@id/star5linearLayout"
+                        app:layout_constraintTop_toTopOf="@id/star5linearLayout" />
+
+                    <TextView
+                        android:id="@+id/star5totalRatingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="555"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar5"
+                        app:layout_constraintLeft_toRightOf="@id/progressBar5"
+                        app:layout_constraintTop_toTopOf="@id/progressBar5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- 4 Star Constraint Layout-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/star4ConstraintLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/star5ConstraintLayout">
+
+                    <!-- Rate Quantity -->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/star4linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="4dp"
+
+                        app:layout_constraintLeft_toLeftOf="@id/star4ConstraintLayout"
+                        app:layout_constraintTop_toTopOf="@id/star4ConstraintLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/black" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar4"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        app:layout_constraintBottom_toBottomOf="@id/star4linearLayout"
+                        app:layout_constraintLeft_toRightOf="@id/star4linearLayout"
+                        app:layout_constraintTop_toTopOf="@id/star4linearLayout" />
+
+                    <TextView
+                        android:id="@+id/star4totalRatingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="555"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar4"
+                        app:layout_constraintLeft_toRightOf="@id/progressBar4"
+                        app:layout_constraintTop_toTopOf="@id/progressBar4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- 3 Star Constraint Layout-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/star3ConstraintLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/star4ConstraintLayout">
+
+                    <!-- Rate Quantity -->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/star3linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="4dp"
+
+                        app:layout_constraintLeft_toLeftOf="@id/star3ConstraintLayout"
+                        app:layout_constraintTop_toTopOf="@id/star3ConstraintLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/black" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar3"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        app:layout_constraintBottom_toBottomOf="@id/star3linearLayout"
+                        app:layout_constraintLeft_toRightOf="@id/star3linearLayout"
+                        app:layout_constraintTop_toTopOf="@id/star3linearLayout" />
+
+                    <TextView
+                        android:id="@+id/star3totalRatingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="555"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar3"
+                        app:layout_constraintLeft_toRightOf="@id/progressBar3"
+                        app:layout_constraintTop_toTopOf="@id/progressBar3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- 2 Star Constraint Layout-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/star2ConstraintLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/star3ConstraintLayout">
+
+                    <!-- Rate Quantity -->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/star2linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="4dp"
+
+                        app:layout_constraintLeft_toLeftOf="@id/star2ConstraintLayout"
+                        app:layout_constraintTop_toTopOf="@id/star2ConstraintLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/black" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        app:layout_constraintBottom_toBottomOf="@id/star2linearLayout"
+                        app:layout_constraintLeft_toRightOf="@id/star2linearLayout"
+                        app:layout_constraintTop_toTopOf="@id/star2linearLayout" />
+
+                    <TextView
+                        android:id="@+id/star2totalRatingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="555"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar2"
+                        app:layout_constraintLeft_toRightOf="@id/progressBar2"
+                        app:layout_constraintTop_toTopOf="@id/progressBar2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <!-- 1 Star Constraint Layout-->
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/star1ConstraintLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/star2ConstraintLayout">
+
+                    <!-- Rate Quantity -->
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/star1linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="4dp"
+
+                        app:layout_constraintLeft_toLeftOf="@id/star1ConstraintLayout"
+                        app:layout_constraintTop_toTopOf="@id/star1ConstraintLayout">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="4dp"
+                            android:src="@drawable/star_icon"
+                            app:tint="@color/black" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+
+                        app:layout_constraintBottom_toBottomOf="@id/star1linearLayout"
+                        app:layout_constraintLeft_toRightOf="@id/star1linearLayout"
+                        app:layout_constraintTop_toTopOf="@id/star1linearLayout" />
+
+                    <TextView
+                        android:id="@+id/star1totalRatingTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="555"
+                        app:layout_constraintBottom_toBottomOf="@id/progressBar1"
+                        app:layout_constraintLeft_toRightOf="@id/progressBar1"
+                        app:layout_constraintTop_toTopOf="@id/progressBar1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Total Ratings-->
+
+                <TextView
+                    android:id="@+id/totalRatingsBottomTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="2275"
+                    app:layout_constraintRight_toRightOf="@id/star1ConstraintLayout"
+                    app:layout_constraintTop_toBottomOf="@id/star1ConstraintLayout"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Please rate the product below :-"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/totalRatingsBottomTv" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView3">
+
+                    <ImageView
+                        android:id="@+id/ratingStar1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/star_icon"
+                        app:tint="#10000000" />
+
+                    <ImageView
+                        android:id="@+id/ratingStar2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/star_icon"
+                        app:tint="#10000000" />
+
+                    <ImageView
+                        android:id="@+id/ratingStar3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/star_icon"
+                        app:tint="#10000000" />
+
+                    <ImageView
+                        android:id="@+id/ratingStar4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/star_icon"
+                        app:tint="#10000000" />
+
+                    <ImageView
+                        android:id="@+id/ratingStar5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/star_icon"
+                        app:tint="#10000000" />
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buyNowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:drawableLeft="@drawable/cart_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:elevation="3dp"
+        android:padding="14dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

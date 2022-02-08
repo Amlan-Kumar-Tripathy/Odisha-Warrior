@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.QuestionsDisplayActivity"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/allQuestionsIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/all_questions"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/changeLanguageIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/language_icon_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/allQuestionsIv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/timerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="04:00:00"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/submitBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/white"
+            android:text="Submit"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F0EFF3"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+
+
+        >
+
+        <TextView
+            android:id="@+id/questionNoTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/black"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Q. 2/50"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/positiveMarksTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGreen"
+            android:layout_marginLeft="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="+4"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/questionNoTv"
+            app:layout_constraintTop_toTopOf="@+id/questionNoTv"
+            />
+
+        <TextView
+            android:id="@+id/negativeMarksTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:layout_marginLeft="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="-1"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toRightOf="@id/positiveMarksTv"
+            app:layout_constraintTop_toTopOf="@+id/questionNoTv"
+            />
+
+        <TextView
+            android:id="@+id/maxMarksTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="Max Marks: 200"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            app:layout_constraintBottom_toBottomOf="@+id/questionNoTv"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/questionNoTv" />
+
+        <TextView
+            android:id="@+id/questionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:elevation="3dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="aaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+            android:textColor="@color/black"
+
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/maxMarksTv"
+            app:layout_constraintStart_toStartOf="@id/questionNoTv"
+            app:layout_constraintTop_toBottomOf="@+id/questionNoTv" />
+
+        <LinearLayout
+            android:id="@+id/optionsLL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/questionTv"
+
+            app:layout_constraintRight_toRightOf="@+id/questionTv"
+            app:layout_constraintLeft_toLeftOf="@+id/questionTv"
+
+            >
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="@+id/optionsLL"
+                app:layout_constraintStart_toStartOf="@+id/questionTv"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/radioBtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:labelFor="@+id/option1"
+                    android:layout_marginTop="16dp"
+                    android:buttonTint="@color/black"
+                    android:text="aaa"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:elevation="3dp"
+                    android:contentDescription="a"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:labelFor="@+id/option2"
+                    android:layout_marginTop="16dp"
+                    android:buttonTint="@color/black"
+                    android:text="bbb"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:elevation="3dp"
+                    android:contentDescription="b"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioBtn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:labelFor="@+id/option3"
+                    android:layout_marginTop="16dp"
+                    android:buttonTint="@color/black"
+                    android:text="bbb"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:elevation="3dp"
+                    android:contentDescription="c"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioBtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/white"
+                    android:labelFor="@+id/option4"
+                    android:buttonTint="@color/black"
+                    android:text="bbb"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:elevation="3dp"
+                    android:contentDescription="d"
+                    />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:layout_width="105dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="@drawable/rounded_corner_button_layout"
+            android:backgroundTint="#FA1515"
+
+            android:text="Previous"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:elevation="3dp"
+            />
+
+        <Button
+            android:id="@+id/clearSelBtn"
+            android:layout_width="105dp"
+            android:layout_height="52dp"
+
+            android:layout_marginBottom="16dp"
+
+            android:background="@drawable/rounded_corner_button_layout"
+            android:backgroundTint="#A08BFB"
+            android:text="Clear selection"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+            app:layout_constraintStart_toEndOf="@+id/prevBtn"
+            app:layout_constraintTop_toTopOf="@+id/prevBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:elevation="3dp"
+            />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="105dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            android:background="@drawable/rounded_corner_button_layout"
+            android:backgroundTint="@color/primary"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/prevBtn"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:elevation="3dp"
+            />
+
+        <TextView
+            android:id="@+id/takeATourTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a Tour"
+            android:textColor="#60000000"
+            app:layout_constraintBottom_toTopOf="@+id/clearSelBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/optionsLL" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/testSubmittedConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#F0EFF3"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#A5E883"
+            android:paddingVertical="8dp"
+
+            android:text="Test submitted successfully !"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/test_submitted_success"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="Your score:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/testScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="150/150"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+
+            android:textSize="22sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@id/testScoreIndicator"
+            app:layout_constraintStart_toStartOf="@id/testScoreIndicator"
+            app:layout_constraintTop_toTopOf="@+id/testScoreIndicator"
+            app:layout_constraintBottom_toBottomOf="@id/testScoreIndicator"/>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+           android:id="@+id/testScoreIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:progressTint="@color/white"
+            app:indicatorColor="@color/successGreen"
+            app:indicatorSize="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            app:trackThickness="5dp"
+            app:trackColor="@color/white"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

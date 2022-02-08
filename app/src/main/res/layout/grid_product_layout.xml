@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_bacgkround_white"
+    android:elevation="5dp"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/layoutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="YT Videos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewAllButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="View All"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutTitle" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridProdLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bacgkround_white"
+        app:columnCount="2"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAllButton">
+
+        <include layout="@layout/grid_product_item_layout"
+            app:layout_columnWeight="1"
+            />
+        <include layout="@layout/grid_product_item_layout"
+            app:layout_columnWeight="1"
+            />
+        <include layout="@layout/grid_product_item_layout"
+            app:layout_columnWeight="1"
+            />
+        <include layout="@layout/grid_product_item_layout"
+            app:layout_columnWeight="1"
+            />
+
+
+        <!--TODO:apply the layout dividers -->
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="#A4A4A4"
+        app:layout_constraintBottom_toBottomOf="@+id/gridProdLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridProdLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridProdLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridProdLayout" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#A4A4A4"
+        app:layout_constraintBottom_toBottomOf="@+id/gridProdLayout"
+        app:layout_constraintEnd_toEndOf="@+id/gridProdLayout"
+        app:layout_constraintStart_toStartOf="@+id/gridProdLayout"
+        app:layout_constraintTop_toTopOf="@+id/gridProdLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

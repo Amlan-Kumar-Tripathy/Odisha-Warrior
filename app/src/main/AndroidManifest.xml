@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.odishawarrior">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/odisha_warrior_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/odisha_warrior_launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OdishaWarrior">
+        <activity
+            android:name=".activities.NotesPdfViewerActivity"
+            android:exported="false"
+
+            />
+        <activity
+            android:name=".activities.PurchasedNotesDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.QuestionsDisplayActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activities.TestInstructionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LectureDisplayActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".activities.CourseMaterialActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".activities.TestSetsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NotesDisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CourseSubjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UpdateUserDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.CategoriesActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ProductDetailsActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ViewAllActivity"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.AuthenticationActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_screen_theme" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_screen_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/splash_screen_theme" />
+
+        <service
+            android:name=".classes.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

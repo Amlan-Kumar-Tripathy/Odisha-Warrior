@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/account_icon.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/badge_count_background.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/courses_icon.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/dustbin_icon.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/lecture_icon_blue.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/rounded_corner_bacgkround_white.xml" value="0.1300925925925926" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/rounded_corner_button_layout.xml" value="0.1300925925925926" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/selected_dot.xml" value="0.1300925925925926" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/slider_background.xml" value="0.1300925925925926" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/drawable/star_icon.xml" value="0.24027777777777778" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_authentication.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_categories.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_course_material.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_course_subjects.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_delivery.xml" value="0.2" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_lecture_display.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_main.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_notes_pdf_viewer.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_product_details.xml" value="0.264" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_purchased_notes_display.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_questions_display.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_test_instructions.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_test_sets.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_update_user_details.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/activity_view_all.xml" value="0.2228310502283105" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/all_questions_dialog_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/allquestion_item_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/banner_view_products_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/banners_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/categories_item_layout.xml" value="0.13287037037037036" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_home.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_lectures.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_login_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_my_account.xml" value="0.2" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_my_courses.xml" value="0.21342592592592594" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_my_notes.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_my_tests.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_notes.xml" value="0.21342592592592594" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_notifications.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/fragment_tests.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/grid_product_item_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/grid_product_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/horizontal_product_item_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/horizontal_slider_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/image_chooser_layout_bottom_sheet_dialog.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/loading_dialog.xml" value="0.22268518518518518" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/login_dialog_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/my_account_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/notification_demo_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/purchased_course_material_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/purchased_item_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/purchased_notes_pdfs_display_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/subjects_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/test_sets_item_layout.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/layout/view_all_item_layout.xml" value="0.264" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/menu/language_menu.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/menu/main_activity_action_menu.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/menu/main_drawer_menu.xml" value="0.22592592592592592" />
+        <entry key="..\:/AndroidDevProjects/OdishaWarrior2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24027777777777778" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
